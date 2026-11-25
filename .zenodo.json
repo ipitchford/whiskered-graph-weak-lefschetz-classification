@@ -1,0 +1,94 @@
+{
+ "title": "Boolean blocks and the weak Lefschetz property of whiskered and chordal graph algebras",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "description": "<p><strong>Unrefereed research candidate.</strong> Take a network (a graph), make one variable per node, and declare that the product of two linked nodes is zero, and that every variable squares to zero. The resulting algebra records the network's independent sets (groups of nodes with no links between them). The weak Lefschetz property asks whether multiplying by the sum of all the variables behaves as well as dimensions allow at every step: injective while the spaces grow, surjective once they shrink. When it holds, many counting sequences attached to the algebra are forced to rise and then fall.</p><p><strong>Context.</strong> Whiskering a graph G attaches a private leaf to every vertex. Cooper, Faridi, Holleben, Nicklasson and Van Tuyl, and then Holleben and Nicklasson (Journal of Pure and Applied Algebra, 2026), showed that whiskered graphs rarely have the property: they proved it for complete graphs, for independence number two with odd socle degree in characteristic zero, and its failure when the independence number is at least n/3 + 2 (hence for all bipartite graphs, with computer checks for small orders). They conjectured that it always fails once G has three pairwise non-adjacent vertices, and checked this by computer for graphs on at most seven vertices; an eight-vertex check in characteristic zero has been posted by Zeng.</p><p><strong>Main results.</strong> (A) The Holleben&ndash;Nicklasson conjecture holds over every field. More precisely, if G has n vertices and independence number &alpha;, the whiskered algebra has the weak Lefschetz property exactly when &alpha; &le; 1, or n is odd and &alpha; = 2, and the characteristic is zero or exceeds &lceil;n/2&rceil;; it has the strong Lefschetz property exactly when &alpha; &le; 1 and the characteristic is zero or exceeds n. The rank of every power of the sum of the variables is given in every characteristic. (B) The same classification, with thresholds shifted by one, for the Gorenstein algebras obtained by Nagata idealisation, which Holleben and Nicklasson realised as G-quadratic Perazzo algebras. (C) For every chordal graph, the algebra splits into Boolean blocks, one for each maximal independent set; the weak and strong properties in characteristic zero depend only on the set of block types, and in characteristic p &gt; 0 they hold exactly when they hold in characteristic zero and p exceeds &lceil;&alpha;/2&rceil; (weak) or &alpha; (strong). As applications, the classifications of Nguyen and Tran for paths (the weak property holds for 1&ndash;7, 9, 10 and 13 vertices) and of Tran Quang Hoa, Nguyen Duy Phuoc and Tran Nguyen Thanh Son for lollipop graphs are reproved with short failure witnesses, extended to every characteristic, and complemented by the strong-property lists.</p><p><strong>Method.</strong> Replace each leaf variable y<sub>i</sub> by u<sub>i</sub> = x<sub>i</sub> + y<sub>i</sub>. The sum of the variables then never changes which original vertices appear in a monomial, so multiplication splits into shifted copies of the Boolean algebra, one for each independent set of G. Blocks of different heights explain every failure of maximal rank, and Wilson's diagonal form of subset-inclusion matrices (with a second proof by Ghorbani, Khosrovshahi, Maysoori and Mohammad-Noori) gives every rank in every characteristic. Holleben and Nicklasson's Lemma 3.1 already contains the complete-graph case of the splitting in triangular form, and the argument for the Gorenstein algebras follows the projection argument of their Theorem 4.6. For chordal graphs the same substitution at a simplicial vertex, iterated, plays the role of the whiskers.</p><p><strong>Limits.</strong> Pure mathematics: a classification, not an algorithm for applications. The splitting needs a private leaf at every vertex, or removable simplicial vertices for the chordal result, so cycles, tadpole graphs with a cycle of length at least four, and very well-covered graphs in general are outside the method. The path and lollipop corollaries use a small exact computer check for short lengths (at most 24 and 22 vertices). Prime-characteristic thresholds for unequal higher truncation exponents are not determined.</p><p><strong>Contents.</strong> The paper (LaTeX source and PDF); two Python scripts with their recorded JSON outputs: verify.py recomputes ranks in the original variables by exact elimination over prime fields (75 whiskered graphs and 8,440 rank comparisons; 894 chordal graphs and 18,680 comparisons; the eight-vertex example, rank 386 between dimensions 400 and 406), and chordal_lefschetz.py evaluates the chordal criterion with exact integer arithmetic (1,128 direct eliminations, the path and lollipop lists, witness inequalities). Both fail explicitly, also under python -O. Also a bibliography, a machine-readable index, a research-gate record, a review summary, a replay receipt and SHA-256 sums.</p><p><strong>Assurance.</strong> Written proofs with exact computational checks. Internal AI-assisted review only: a combined five-role Claude review panel, a replay of the scripts with negative controls, one revision round with extensions, then a re-review and proof audit of every new and rewritten proof. No Astra/Codex review took place. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+ "creators": [
+  {
+   "name": "Anonymous"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-zero",
+ "version": "0.1.0-candidate",
+ "publication_date": "2026-11-25",
+ "keywords": [
+  "weak Lefschetz property",
+  "strong Lefschetz property",
+  "whiskered graphs",
+  "chordal graphs",
+  "Artinian algebras",
+  "independence complex",
+  "Boolean algebra",
+  "inclusion matrices",
+  "Gorenstein algebras"
+ ],
+ "notes": "Code (*.py and the CI workflow) is MIT; prose, manuscript, recorded outputs and records are CC0-1.0.",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/ipitchford/whiskered-graph-weak-lefschetz-classification/tree/v0.1.0-candidate",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://evidencepress.org/releases/whiskered-graph-weak-lefschetz-classification/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "10.1016/j.jpaa.2026.108238",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/978-981-97-3886-1_5",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.jpaa.2021.106968",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.2140/pjm.1965.15.835",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1137/0601021",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/s0195-6698(13)80046-7",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.2139/ssrn.7385138",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/s40306-024-00549-1",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.jcta.2007.09.002",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "arXiv:2510.21569",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2609.13888",
+   "relation": "references",
+   "scheme": "arxiv"
+  }
+ ]
+}

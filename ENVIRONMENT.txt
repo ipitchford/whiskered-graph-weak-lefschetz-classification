@@ -1,0 +1,13 @@
+Environment for whiskered-graph-weak-lefschetz-classification 0.1.0-candidate
+
+Release replay (macOS 27.2.1, arm64), cwd = package root, launched with `uv run --no-project --python 3.12`:
+- code/verify.py: CPython 3.12.11 with numpy 2.3.5 (uv-managed environment from `--with numpy==2.3.5`; printed inside the run).
+- code/chordal_lefschetz.py: standard library only; the `uv run --python 3.12 python3` command resolved through the
+  local python3 shim to CPython 3.14.7 (printed inside the run). The output does not depend on the interpreter version.
+CI (GitHub Actions, ubuntu-latest): CPython 3.12 from actions/setup-python with numpy 2.3.5 from requirements.txt.
+
+Comparison policy: exact. All arithmetic is exact (prime-field elimination and integers); the JSON outputs contain no
+timestamps, floats, interpreter or platform versions, and must be byte-identical to results/ on every platform. No
+tolerance and no exclusions are declared.
+
+Run every script with python3 -I -B -O: the checks are explicit (they print FAIL and exit 1) and do not use assert.

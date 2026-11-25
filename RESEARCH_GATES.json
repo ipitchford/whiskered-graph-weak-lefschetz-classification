@@ -1,0 +1,216 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 25 November 2026 for 0.1.0-candidate from the dated searches of the internal AI-assisted review (24 November 2026), the source reading record, the corpus overlap check, refs.bib, REVIEW_SUMMARY.md and the paper's own positioning (Section 1). It records scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "The Holleben-Nicklasson conjecture (WLP fails for whiskered graphs with independence number at least three) holds over every field; exact WLP/SLP classification of whiskered algebras A_Δ in every characteristic (Theorem A)",
+   "unit": "statement",
+   "paperLocation": "Theorem 4.1; Theorem A",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar citations of Holleben-Nicklasson (arXiv:2502.00155), Crossref and arXiv records, one general web search, by the domain reviewer; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "whiskered graph weak Lefschetz conjecture; papers citing Holleben-Nicklasson 2502.00155; weak Lefschetz property independence complex / edge ideal Artinian algebras; paths, cycles, lollipop and tadpole graphs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (journal, arXiv or owner-supplied copies)",
+     "query": "Holleben-Nicklasson Sections 1-4 (Conjectures 1.3 and 3.15, Lemma 3.1, Propositions 3.2 and 3.5, Examples 3.17-3.18, Lemmas 4.3 and 4.5, Theorems 4.4 and 4.6); Cooper et al. Section 1 and Lemma 2.2; Wilson 1990 Theorems 1-2; Ghorbani et al. Theorem 1 and Corollary 3; Gasanova-Lundqvist-Nicklasson Theorem 1; Nguyen-Tran Theorem 1.2; arXiv:2510.21569 Theorems 1.2-1.3; Fulkerson-Gross p. 851"
+    }
+   ],
+   "closestPriorWork": "Holleben-Nicklasson 2026 (complete graphs SLP; WLP for α ≤ 2 with odd socle degree in characteristic zero; failure for α ≥ n/3 + 2 and bipartite graphs; conjecture checked to seven vertices); Cooper et al. 2024 (degrees 1 and n − 1; injectivity below n/2); Zeng (eight vertices, characteristic zero)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "no general resolution was found among the papers citing Holleben-Nicklasson or by web search; the partial results are credited"
+  },
+  {
+   "claim": "Gorenstein idealisation T: explicit linear form attaining every generic rank; WLP/SLP classification in every characteristic (Theorem B)",
+   "unit": "statement",
+   "paperLocation": "Theorem 5.1, Corollary 5.2, Remark after it",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar citations of Holleben-Nicklasson (arXiv:2502.00155), Crossref and arXiv records, one general web search, by the domain reviewer; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "whiskered graph weak Lefschetz conjecture; papers citing Holleben-Nicklasson 2502.00155; weak Lefschetz property independence complex / edge ideal Artinian algebras; paths, cycles, lollipop and tadpole graphs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (journal, arXiv or owner-supplied copies)",
+     "query": "Holleben-Nicklasson Sections 1-4 (Conjectures 1.3 and 3.15, Lemma 3.1, Propositions 3.2 and 3.5, Examples 3.17-3.18, Lemmas 4.3 and 4.5, Theorems 4.4 and 4.6); Cooper et al. Section 1 and Lemma 2.2; Wilson 1990 Theorems 1-2; Ghorbani et al. Theorem 1 and Corollary 3; Gasanova-Lundqvist-Nicklasson Theorem 1; Nguyen-Tran Theorem 1.2; arXiv:2510.21569 Theorems 1.2-1.3; Fulkerson-Gross p. 851"
+    }
+   ],
+   "closestPriorWork": "Holleben-Nicklasson Theorem 4.6 and Corollary 4.7 (failure for α ≥ n/3 + 2), whose projection argument is followed and credited",
+   "verdict": "partially-known-cited",
+   "verdictNote": "failure in part of the range is known; the full classification was not found"
+  },
+  {
+   "claim": "Chordal graphs: splitting of R(H) into Boolean blocks, invariant block profile, WLP/SLP criterion in every characteristic (Theorem C); paths and lollipops in every characteristic with SLP lists",
+   "unit": "statement",
+   "paperLocation": "Theorems 7.1, 7.3; Proposition 7.2; Corollaries 7.5, 7.6",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar citations of Holleben-Nicklasson (arXiv:2502.00155), Crossref and arXiv records, one general web search, by the domain reviewer; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "whiskered graph weak Lefschetz conjecture; papers citing Holleben-Nicklasson 2502.00155; weak Lefschetz property independence complex / edge ideal Artinian algebras; paths, cycles, lollipop and tadpole graphs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (journal, arXiv or owner-supplied copies)",
+     "query": "Holleben-Nicklasson Sections 1-4 (Conjectures 1.3 and 3.15, Lemma 3.1, Propositions 3.2 and 3.5, Examples 3.17-3.18, Lemmas 4.3 and 4.5, Theorems 4.4 and 4.6); Cooper et al. Section 1 and Lemma 2.2; Wilson 1990 Theorems 1-2; Ghorbani et al. Theorem 1 and Corollary 3; Gasanova-Lundqvist-Nicklasson Theorem 1; Nguyen-Tran Theorem 1.2; arXiv:2510.21569 Theorems 1.2-1.3; Fulkerson-Gross p. 851"
+    }
+   ],
+   "closestPriorWork": "Nguyen-Tran 2024 (paths and cycles, characteristic zero); Tran Quang Hoa, Nguyen Duy Phuoc and Tran Nguyen Thanh Son, arXiv:2510.21569 (lollipops, characteristic zero) and arXiv:2609.13888 (tadpoles)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the characteristic-zero WLP lists for paths and lollipops are known and credited; the general chordal criterion, the positive-characteristic thresholds and the SLP lists were not found"
+  },
+  {
+   "claim": "Method: the substitution u_i = x_i + y_i (and, for chordal graphs, z_w ↦ Σ_{v∈N[w]} z_v at a simplicial vertex) makes multiplication by the sum of the variables block-diagonal with shifted Boolean-algebra blocks; Wilson's diagonal form then gives every rank in every characteristic",
+   "unit": "method",
+   "paperLocation": "Sections 1 (key idea), 2-3, 7 (Theorems 3.1 and 7.1; equation (2))",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar citations of Holleben-Nicklasson (arXiv:2502.00155), Crossref and arXiv records, one general web search, by the domain reviewer; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "whiskered graph weak Lefschetz conjecture; papers citing Holleben-Nicklasson 2502.00155; weak Lefschetz property independence complex / edge ideal Artinian algebras; paths, cycles, lollipop and tadpole graphs"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (journal, arXiv or owner-supplied copies)",
+     "query": "Holleben-Nicklasson Sections 1-4 (Conjectures 1.3 and 3.15, Lemma 3.1, Propositions 3.2 and 3.5, Examples 3.17-3.18, Lemmas 4.3 and 4.5, Theorems 4.4 and 4.6); Cooper et al. Section 1 and Lemma 2.2; Wilson 1990 Theorems 1-2; Ghorbani et al. Theorem 1 and Corollary 3; Gasanova-Lundqvist-Nicklasson Theorem 1; Nguyen-Tran Theorem 1.2; arXiv:2510.21569 Theorems 1.2-1.3; Fulkerson-Gross p. 851"
+    }
+   ],
+   "closestPriorWork": "Holleben-Nicklasson Lemma 3.1 (complete-graph case, block-triangular); Gasanova-Lundqvist-Nicklasson Theorem 1 (splitting of the monomial basis along a colon ideal, sufficient conditions only); Wilson 1990 and Ghorbani et al. 2008 (diagonal forms); Stanley 1980 (Boolean lattice and hard Lefschetz)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the ingredients are classical and credited; the block-diagonal splitting for every whiskered complex and every chordal graph was not found"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Holleben, T. and Nicklasson, L. (2026), Roller Coaster Gorenstein algebras and Koszul algebras failing the weak Lefschetz property, Journal of Pure and Applied Algebra 230(4), 108238 (arXiv:2502.00155)",
+   "usedFor": "the conjecture, definitions, Lemma 3.1, Propositions 3.2/3.5, Examples 3.17/3.18, Section 4",
+   "readWhat": "Sections 1-4 of the arXiv version",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.jpaa.2026.108238"
+  },
+  {
+   "citation": "Cooper, S. M., Faridi, S., Holleben, T., Nicklasson, L. and Van Tuyl, A. (2024), The weak Lefschetz property of whiskered graphs, Lefschetz Properties, Springer INdAM Series, 97-110 (arXiv:2306.04393)",
+   "usedFor": "known results; reduction to the sum of the variables over any field (Lemma 2.2)",
+   "readWhat": "Section 1 and Lemma 2.2 with the remark after it",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1007/978-981-97-3886-1_5"
+  },
+  {
+   "citation": "Wilson, R. M. (1990), A diagonal form for the incidence matrices of t-subsets vs. k-subsets, European Journal of Combinatorics 11(6), 609-615",
+   "usedFor": "diagonal form (Theorem 2) and ranks mod p (Theorem 1)",
+   "readWhat": "whole paper (owner-supplied copy)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/S0195-6698(13)80046-7"
+  },
+  {
+   "citation": "Ghorbani, E., Khosrovshahi, G. B., Maysoori, Ch. and Mohammad-Noori, M. (2008), Inclusion matrices and chains, Journal of Combinatorial Theory, Series A 115(5), 878-887 (arXiv:0709.3144)",
+   "usedFor": "second proof of the diagonal form",
+   "readWhat": "Theorem 1 and Corollary 3",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.jcta.2007.09.002"
+  },
+  {
+   "citation": "Gasanova, O., Lundqvist, S. and Nicklasson, L. (2022), On decomposing monomial algebras with the Lefschetz properties, Journal of Pure and Applied Algebra 226(6), 106968 (arXiv:2006.14453)",
+   "usedFor": "positioning of the splitting",
+   "readWhat": "Section 2 and Theorem 1",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.jpaa.2021.106968"
+  },
+  {
+   "citation": "Nguyen, H. D. and Tran, Q. H. (2024), The weak Lefschetz property of Artinian algebras associated to paths and cycles, Acta Mathematica Vietnamica 49(3), 523-544 (arXiv:2310.14368)",
+   "usedFor": "published path list",
+   "readWhat": "Theorems 1.2 and 4.2",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1007/s40306-024-00549-1"
+  },
+  {
+   "citation": "Tran Quang Hoa, Nguyen Duy Phuoc and Tran Nguyen Thanh Son (2025), The weak Lefschetz property for tensor products of Artinian monomial algebras and its applications to lollipop graphs, arXiv:2510.21569",
+   "usedFor": "published lollipop lists",
+   "readWhat": "Theorems 1.2 and 1.3",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://arxiv.org/abs/2510.21569"
+  },
+  {
+   "citation": "Fulkerson, D. R. and Gross, O. A. (1965), Incidence matrices and interval graphs, Pacific Journal of Mathematics 15(3), 835-855",
+   "usedFor": "Dirac's theorem on simplicial vertices",
+   "readWhat": "p. 851",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.2140/pjm.1965.15.835"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "The splitting needs a private leaf at every vertex (whiskered case) or a simplicial vertex at each step (chordal case)",
+   "closingQuestion": "Do cycles, tadpoles with long cycles, partially whiskered and very well-covered graphs admit a similar splitting?",
+   "triedOrSearched": "Holleben-Nicklasson Example 3.18 (very well-covered, has the WLP) examined; tadpole paper read; elimination stops at the cycle",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 8, Scope",
+   "whyNotClosedNow": "outside the method"
+  },
+  {
+   "limitation": "Prime-characteristic thresholds for unequal higher truncation exponents",
+   "closingQuestion": "Which primes preserve maximal rank on the monomial complete-intersection blocks of Theorem 6.1?",
+   "triedOrSearched": "reduced by the splitting to the known positive-characteristic behaviour of monomial complete intersections; not worked out",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 6, last sentence",
+   "whyNotClosedNow": "beyond one revision round"
+  },
+  {
+   "limitation": "Path and lollipop corollaries rely on a finite computer check for short lengths",
+   "closingQuestion": "Is the finite range exact and independently checked?",
+   "triedOrSearched": "exact integer evaluation of the Theorem 7.3 criterion for n ≤ 24 (paths) and n ≤ 22 (lollipops) and well beyond; witness inequalities checked to n = 5000 and proved analytically above the range; lists agree with the published characteristic-zero classifications; re-review recomputed them with its own script",
+   "estimatedCost": "minutes",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Check scripts used bare assert in the original bundle",
+   "closingQuestion": "Do the checks stay active under python -O?",
+   "triedOrSearched": "asserts replaced by explicit checks; two negative controls (Nguyen-Tran list with 8 added; WLP threshold forced to 2) exit 1 under -O in the replay and in CI",
+   "estimatedCost": "minutes",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Novelty rests on searches of limited scope",
+   "closingQuestion": "Would MathSciNet or zbMATH change attribution?",
+   "triedOrSearched": "Semantic Scholar citations of Holleben-Nicklasson, Crossref and arXiv records, a web search; cited sources read; Evidence Press corpus checked",
+   "estimatedCost": "subscription indexes",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "MathSciNet and zbMATH were outside the searched corpus",
+   "whyNotClosedNow": "recorded here; the paper positions its results against the sources read"
+  }
+ ],
+ "extensionScout": {
+  "by": "five internal reviewer roles, the re-reviewer and the lead",
+  "date": "2026-11-24",
+  "proposals": [
+   "a Lefschetz criterion for chordal graphs",
+   "paths and lollipops in every characteristic, with SLP lists",
+   "characterise the Holleben-Nicklasson Perazzo algebras with the WLP",
+   "Smith normal form (torsion of cokernels over Z)",
+   "strip criterion for unequal exponents",
+   "cycles and tadpoles"
+  ],
+  "actions": [
+   "done: Theorem 7.3 and Proposition 7.2",
+   "done: Lemma 7.4, Corollaries 7.5 and 7.6, chordal_lefschetz.py",
+   "done: Remark after Corollary 5.2",
+   "not pursued (optional)",
+   "listed as open (only the rank formula is claimed)",
+   "listed as open in Section 8"
+  ]
+ }
+}

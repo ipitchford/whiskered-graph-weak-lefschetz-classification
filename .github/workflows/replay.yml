@@ -1,0 +1,56 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  verify:
+    name: Manifest; both scripts under python -O; byte comparison with results/; negative controls
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned dependencies
+        run: python3 -m pip install -r requirements.txt
+      - name: Run both scripts in a copy of the package (cwd = package root)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python3 -c 'import sys, numpy; print(sys.version, numpy.__version__)'
+          for d in run negc negv; do mkdir -p "$RUNNER_TEMP/$d/results"; cp -R code "$RUNNER_TEMP/$d/"; done
+          cd "$RUNNER_TEMP/run"
+          python3 -I -B -O code/verify.py --output results/verification.json
+          python3 -I -B -O code/chordal_lefschetz.py --output results/chordal.json
+      - name: Compare with the recorded results (exact, byte for byte)
+        run: |
+          cmp results/verification.json "$RUNNER_TEMP/run/results/verification.json"
+          cmp results/chordal.json "$RUNNER_TEMP/run/results/chordal.json"
+          echo "both outputs byte-identical"
+      - name: Negative control 1 under -O (8 added to the Nguyen-Tran path list)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          cd "$RUNNER_TEMP/negc"
+          sed -i 's/^NT_PATH_WLP = {1, 2, 3, 4, 5, 6, 7, 9, 10, 13}$/NT_PATH_WLP = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13}/' code/chordal_lefschetz.py
+          grep -q '^NT_PATH_WLP = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13}$' code/chordal_lefschetz.py
+          if python3 -I -B -O code/chordal_lefschetz.py --output /dev/null > neg.txt 2>&1; then echo "negative control not detected"; exit 1; fi
+          grep -q '^FAIL: ' neg.txt
+          echo "negative control 1 detected"
+      - name: Negative control 2 under -O (WLP threshold forced to 2)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          cd "$RUNNER_TEMP/negv"
+          sed -i 's/^        threshold = 1 + (n % 2)$/        threshold = 2/' code/verify.py
+          grep -q '^        threshold = 2$' code/verify.py
+          if python3 -I -B -O code/verify.py --output /dev/null > neg.txt 2>&1; then echo "negative control not detected"; exit 1; fi
+          grep -q '^FAIL: ' neg.txt
+          echo "negative control 2 detected"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

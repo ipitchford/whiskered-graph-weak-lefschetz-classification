@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+type: software
+title: "Boolean blocks and the weak Lefschetz property of whiskered and chordal graph algebras"
+abstract: "Unrefereed research candidate. Holleben and Nicklasson conjectured that whiskering a graph with independence number at least three always gives an Artinian algebra without the weak Lefschetz property. The conjecture holds over every field: if G has n vertices and independence number alpha, the whiskered algebra has the weak Lefschetz property exactly when alpha <= 1, or n is odd and alpha = 2, and the characteristic is zero or exceeds ceil(n/2); it has the strong property exactly when alpha <= 1 and the characteristic is zero or exceeds n. One change of variables splits multiplication by the sum of the variables into shifted Boolean algebras, one for each independent set, and Wilson's diagonal form gives every rank in every characteristic. The same splitting classifies the Lefschetz properties of the Gorenstein idealisations, and, at simplicial vertices, gives a criterion for all chordal graphs, which reproves and extends the classifications for paths and lollipop graphs to every characteristic."
+authors:
+  - name: "Anonymous"
+version: "0.1.0-candidate"
+date-released: "2026-11-25"
+doi: "10.5281/zenodo.24540630"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24540630"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24540629"
+    description: "All versions (concept DOI)"
+repository-code: "https://github.com/ipitchford/whiskered-graph-weak-lefschetz-classification"
+url: "https://evidencepress.org/releases/whiskered-graph-weak-lefschetz-classification/"
+license: CC0-1.0
+keywords:
+  - weak Lefschetz property
+  - strong Lefschetz property
+  - whiskered graphs
+  - chordal graphs
+  - Artinian algebras
+  - inclusion matrices
+preferred-citation:
+  type: article
+  title: "Boolean blocks and the weak Lefschetz property of whiskered and chordal graph algebras"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  doi: "10.5281/zenodo.24540630"
+  publisher:
+    name: "Zenodo"
+  notes: "Version 0.1.0-candidate; unrefereed"

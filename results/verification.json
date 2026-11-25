@@ -1,0 +1,16 @@
+{
+  "chordal_labelled_graphs_orders_1_to_5": 894,
+  "chordal_rank_comparisons": 18680,
+  "higher_power_rank_comparisons_F1009": 143,
+  "non_flag_complex_rank_comparisons": 120,
+  "order_eight_example": {
+    "cokernel": 20,
+    "dim_A4": 400,
+    "dim_A5": 406,
+    "kernel": 14,
+    "rank": 386
+  },
+  "status": "PASS",
+  "whiskered_labelled_graphs_orders_1_to_4": 75,
+  "whiskered_rank_comparisons_F2_F3_F5_F7": 8440
+}
